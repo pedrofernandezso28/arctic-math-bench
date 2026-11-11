@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arctic-math-bench solve item",
+  "type": "object",
+  "required": ["id", "category", "level", "task", "truth", "reference"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+-[0-9]{3}$" },
+    "category": { "type": "string" },
+    "level": { "enum": ["lower-secondary", "upper-secondary", "university"] },
+    "judgeAs": { "type": "string" },
+    "note": { "type": "string" },
+    "task": {
+      "type": "object",
+      "required": ["kind", "input"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["equation", "inequality", "system", "derivative", "implicit-derivative", "antiderivative", "definite-integral", "limit", "ode", "matrix", "complex", "series", "simplify", "factor", "expand", "partial-fractions"] },
+        "input": { "type": "string", "minLength": 1 },
+        "options": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "variable": { "type": "string" },
+            "angleUnit": { "enum": ["rad", "deg"] },
+            "domain": { "const": "complex" },
+            "order": { "type": "integer", "minimum": 2 },
+            "at": { "type": "string" },
+            "lower": { "type": "string" },
+            "upper": { "type": "string" },
+            "point": { "type": "string" },
+            "side": { "enum": ["left", "right"] },
+            "operation": { "enum": ["det", "inverse", "eigen", "rank", "solve", "multiply", "transpose"] },
+            "secondMatrix": { "type": "string" },
+            "constants": { "type": "string" }
+          }
+        }
+      }
+    },
+    "truth": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["roots", "complexRoots", "none", "identity", "solutionSet", "symbolicRoots", "trig", "inequality", "systemSolutions", "underdetermined", "derivative", "implicitDerivative", "antiderivative", "number", "diverges", "dne", "ode", "matrix", "eigenvalues", "singular", "undefined", "vector", "closedForm", "polynomial", "equivalent"] }
+      },
+      "allOf": [
+        { "if": { "properties": { "type": { "enum": ["roots", "complexRoots", "eigenvalues", "vector"] } } }, "then": { "required": ["values"], "properties": { "values": { "type": "array", "items": { "type": "string" } } } } },
+        { "if": { "properties": { "type": { "const": "symbolicRoots" } } }, "then": { "required": ["params", "values"] } },
+        { "if": { "properties": { "type": { "const": "trig" } } }, "then": { "required": ["base", "unit"], "properties": { "unit": { "enum": ["rad", "deg"] } } } },
+        { "if": { "properties": { "type": { "const": "solutionSet" } } }, "then": { "required": ["set"], "properties": { "set": { "$ref": "#/definitions/intervals" } } } },
+        { "if": { "properties": { "type": { "const": "inequality" } } }, "then": { "required": ["reference"], "properties": { "reference": { "$ref": "#/definitions/intervals" } } } },
+        { "if": { "properties": { "type": { "const": "systemSolutions" } } }, "then": { "required": ["solutions"] } },
+        { "if": { "properties": { "type": { "const": "implicitDerivative" } } }, "then": { "required": ["expr", "points"] } },
+        { "if": { "properties": { "type": { "const": "number" } } }, "then": { "required": ["value"], "properties": { "value": { "type": "string" } } } },
+        { "if": { "properties": { "type": { "const": "ode" } } }, "then": { "required": ["order", "residual"], "properties": { "order": { "enum": [1, 2] }, "residual": { "type": "string" } } } },
+        { "if": { "properties": { "type": { "const": "matrix" } } }, "then": { "required": ["rows"] } },
+        { "if": { "properties": { "type": { "const": "closedForm" } } }, "then": { "required": ["variable", "samples"] } },
+        { "if": { "properties": { "type": { "const": "polynomial" } } }, "then": { "required": ["expr"] } }
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["refused", "none", "all", "undefined", "singular", "dne", "diverges", "values", "intervals", "expression", "implicit", "number", "matrix", "vector", "solutions", "parametric"] }
+      },
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "values" } } }, "then": { "anyOf": [{ "required": ["values"] }, { "required": ["families"] }] } },
+        { "if": { "properties": { "type": { "const": "intervals" } } }, "then": { "required": ["intervals"], "properties": { "intervals": { "$ref": "#/definitions/intervals" } } } },
+        { "if": { "properties": { "type": { "const": "expression" } } }, "then": { "required": ["expr"], "properties": { "expr": { "type": "string", "minLength": 1 } } } },
+        { "if": { "properties": { "type": { "const": "number" } } }, "then": { "required": ["value"] } },
+        { "if": { "properties": { "type": { "const": "matrix" } } }, "then": { "required": ["rows"] } },
+        { "if": { "properties": { "type": { "const": "solutions" } } }, "then": { "required": ["solutions"] } },
+        { "if": { "properties": { "type": { "const": "parametric" } } }, "then": { "required": ["free", "solution"] } }
+      ]
+    }
+  },
+  "definitions": {
+    "bound": { "type": ["string", "number"] },
+    "intervals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["lo", "hi"],
+        "additionalProperties": false,
+        "properties": { "lo": { "$ref": "#/definitions/bound" }, "hi": { "$ref": "#/definitions/bound" }, "loClosed": { "type": "boolean" }, "hiClosed": { "type": "boolean" } }
+      }
+    }
+  }
+}
