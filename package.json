@@ -1,0 +1,43 @@
+{
+  "name": "arctic-math-bench",
+  "version": "0.1.0",
+  "description": "An engine-agnostic benchmark for math solvers and graphing engines: problems, ground truths, independent judges and a plug-in adapter API.",
+  "author": "pedrofernandez <pedrofernandez@arcticfalconlabs.com>",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "arctic-math-bench": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "schema",
+    "examples",
+    "LICENSE",
+    "LICENSE-DATA",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "bench:solve": "node dist/cli.js solve --adapter examples/mathjs-solve-adapter.mjs",
+    "bench:graph": "node dist/cli.js graph --adapter examples/naive-graph-adapter.mjs"
+  },
+  "dependencies": {
+    "mathjs": "^15.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "ajv": "^8.17.1",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  },
+  "keywords": ["math", "benchmark", "cas", "graphing", "calculator", "solver", "evaluation"]
+}

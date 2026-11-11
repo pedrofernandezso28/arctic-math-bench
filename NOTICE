@@ -1,0 +1,8 @@
+arctic-math-bench
+Copyright 2026 pedrofernandez
+
+The source code is licensed under the Apache License 2.0 (LICENSE).
+The problem data in data/ is licensed under CC BY 4.0 (LICENSE-DATA).
+
+This product depends on mathjs (https://mathjs.org), Apache-2.0, which the judges use
+for numeric evaluation.
