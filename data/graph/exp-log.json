@@ -1,0 +1,18 @@
+[
+{"id":"exp.shift","group":"exp-log","school":1,"task":{"rows":["2^(x-1)+3"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 2 ** (x - 1) + 3"}},
+{"id":"exp.decay","group":"exp-log","school":1,"task":{"rows":["3*2^(-x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 3 * 2 ** -x"}},
+{"id":"exp.e","group":"exp-log","school":1,"task":{"rows":["e^(x+1)-2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => exp(x + 1) - 2"}},
+{"id":"exp.neg","group":"exp-log","school":1,"task":{"rows":["-e^x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -exp(x)"}},
+{"id":"exp.sat","group":"exp-log","school":1,"task":{"rows":["1-e^-x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 - exp(-x)"}},
+{"id":"exp.half","group":"exp-log","school":2,"task":{"rows":["e^(-x/2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => exp(-x / 2)"}},
+{"id":"exp.sinh","group":"exp-log","school":3,"task":{"rows":["2^x-2^(-x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 2 ** x - 2 ** -x"}},
+{"id":"exp.logistic","group":"exp-log","school":2,"task":{"rows":["e^x/(1+e^x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => exp(x) / (1 + exp(x))"}},
+{"id":"log.shift1","group":"exp-log","school":1,"task":{"rows":["ln(x-2)+1"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => ln(x - 2) + 1"}},
+{"id":"log.shift2","group":"exp-log","school":1,"task":{"rows":["ln(x+3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => ln(x + 3)"}},
+{"id":"log.2lnx","group":"exp-log","school":1,"task":{"rows":["2ln(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 2 * ln(x)"}},
+{"id":"log.log10","group":"exp-log","school":1,"task":{"rows":["log(x)+1"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.log10(x) + 1"}},
+{"id":"log.log2","group":"exp-log","school":2,"task":{"rows":["log2(x-1)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.log2(x - 1)"}},
+{"id":"log.neg","group":"exp-log","school":2,"task":{"rows":["-ln(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -ln(x)"}},
+{"id":"log.lnNegX","group":"exp-log","school":2,"task":{"rows":["ln(-x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => ln(-x)"}},
+{"id":"log.lnQuad","group":"exp-log","school":2,"task":{"rows":["ln(x^2+1)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => ln(x * x + 1)"}}
+]

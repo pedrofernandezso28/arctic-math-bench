@@ -1,0 +1,20 @@
+[
+{"id":"fn.tan.D","group":"fn-asymptote","school":1,"task":{"rows":["tan(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.tan"}},
+{"id":"fn.tan.wide","group":"fn-asymptote","school":1,"task":{"rows":["tan(x)"],"window":[-100,100,-10,10],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.tan"}},
+{"id":"fn.tan.pole","group":"fn-asymptote","school":1,"task":{"rows":["tan(x)"],"window":[1.5,1.65,-100,100],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.tan"}},
+{"id":"fn.tan.huge","group":"fn-asymptote","school":1,"task":{"rows":["tan(x)"],"window":[-1000,1000,-1282.0512820512822,1282.0512820512822],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.tan"}},
+{"id":"fn.inv.D","group":"fn-asymptote","school":1,"task":{"rows":["1/x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / x"}},
+{"id":"fn.inv.tiny","group":"fn-asymptote","school":1,"task":{"rows":["1/x"],"window":[-0.000001,0.000001,-0.0000012820512820512822,0.0000012820512820512822],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / x"}},
+{"id":"fn.inv.huge","group":"fn-asymptote","school":1,"task":{"rows":["1/x"],"window":[-1000000,1000000,-1282051.2820512822,1282051.2820512822],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / x"}},
+{"id":"fn.inv.far","group":"fn-asymptote","school":1,"task":{"rows":["1/x"],"window":[1000,1010,0.00098,0.00101],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / x"}},
+{"id":"fn.inv2.D","group":"fn-asymptote","school":2,"task":{"rows":["1/x^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / (x * x)"}},
+{"id":"fn.invq.D","group":"fn-asymptote","school":1,"task":{"rows":["1/(x^2-1)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / (x * x - 1)"}},
+{"id":"fn.invq.pole","group":"fn-asymptote","school":1,"task":{"rows":["1/(x^2-1)"],"window":[0.9,1.1,-50,50],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / (x * x - 1)"}},
+{"id":"fn.sec.D","group":"fn-asymptote","school":2,"task":{"rows":["sec(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / Math.cos(x)"}},
+{"id":"fn.csc.D","group":"fn-asymptote","school":2,"task":{"rows":["csc(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / Math.sin(x)"}},
+{"id":"fn.cot.D","group":"fn-asymptote","school":2,"task":{"rows":["cot(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.cos(x) / Math.sin(x)"}},
+{"id":"fn.ratl.D","group":"fn-asymptote","school":1,"task":{"rows":["(2x+1)/(x-3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (2 * x + 1) / (x - 3)"}},
+{"id":"fn.shift.D","group":"fn-asymptote","school":1,"task":{"rows":["1/(x-3)+2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / (x - 3) + 2"}},
+{"id":"fn.tan2.D","group":"fn-asymptote","school":3,"task":{"rows":["tan(x)^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.tan(x) ** 2"}},
+{"id":"fn.invsqrt.D","group":"fn-asymptote","school":2,"task":{"rows":["1/sqrt(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / Math.sqrt(x)"}}
+]

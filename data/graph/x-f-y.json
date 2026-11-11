@@ -1,0 +1,10 @@
+[
+{"id":"xfy.parab","group":"x=f(y)","school":1,"task":{"rows":["x=y^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - y * y"}},
+{"id":"xfy.sin","group":"x=f(y)","school":2,"task":{"rows":["x=sin(y)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - Math.sin(y)"}},
+{"id":"xfy.cubic","group":"x=f(y)","school":2,"task":{"rows":["x=y^3-y"],"window":[-2,2,-2.5641025641025643,2.5641025641025643],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - (y ** 3 - y)"}},
+{"id":"xfy.vertical","group":"x=f(y)","school":1,"task":{"rows":["x=3"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x) => x - 3"}},
+{"id":"xfy.sqrt","group":"x=f(y)","school":2,"task":{"rows":["x=sqrt(y)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - Math.sqrt(y)"}},
+{"id":"xfy.recip","group":"x=f(y)","school":2,"task":{"rows":["x=1/y"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - 1 / y"},"note":"pole at y=0: no horizontal joining line"},
+{"id":"xfy.ln","group":"x=f(y)","school":3,"task":{"rows":["x=ln(y)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"param","curves":[{"p":"(t) => [((u) => u)(t), (Math.exp)(t)]","t0":-12,"t1":3,"base":8000}]}},
+{"id":"xfy.tan","group":"x=f(y)","school":3,"task":{"rows":["x=tan(y)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - Math.tan(y)"}}
+]

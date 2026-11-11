@@ -1,0 +1,7 @@
+[
+{"id":"lin.4x-7","group":"lines","school":1,"task":{"rows":["y=4x-7"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 4 * x - 7"}},
+{"id":"lin.-0.25x+3","group":"lines","school":1,"task":{"rows":["y=-0.25x+3"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -0.25 * x + 3"}},
+{"id":"lin.pointSlope","group":"lines","school":1,"task":{"rows":["y-2=3(x-1)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => y - 2 - 3 * (x - 1)"}},
+{"id":"lin.pointSlope2","group":"lines","school":1,"task":{"rows":["y+1=-2(x-3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => y + 1 + 2 * (x - 3)"}},
+{"id":"lin.intercept","group":"lines","school":2,"task":{"rows":["x/2+y/3=1"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x / 2 + y / 3 - 1"}}
+]

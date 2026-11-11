@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arctic-math-bench graph item",
+  "type": "object",
+  "required": ["id", "group", "school", "task"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "minLength": 3 },
+    "group": { "type": "string" },
+    "school": { "enum": [1, 2, 3] },
+    "note": { "type": "string" },
+    "judgeRow": { "type": "integer", "minimum": 0 },
+    "judgeAll": { "type": "boolean" },
+    "expectParams": { "type": "array", "items": { "type": "string" } },
+    "task": {
+      "type": "object",
+      "required": ["rows", "window", "canvas"],
+      "additionalProperties": false,
+      "properties": {
+        "rows": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "window": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "number" } },
+        "canvas": { "type": "object", "required": ["width", "height"], "additionalProperties": false, "properties": { "width": { "type": "integer", "minimum": 50 }, "height": { "type": "integer", "minimum": 50 } } },
+        "params": { "type": "object", "additionalProperties": { "type": "number" } },
+        "parameterDomain": { "type": "object", "required": ["min", "max"], "properties": { "min": { "type": "number" }, "max": { "type": "number" } } },
+        "pointsOfInterest": { "type": "object", "required": ["row"], "properties": { "row": { "type": "integer", "minimum": -1 } } }
+      }
+    },
+    "truth": {
+      "type": "object",
+      "required": ["type"],
+      "properties": { "type": { "enum": ["fn", "fns", "param", "implicit", "region", "points"] } },
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "fn" } } }, "then": { "required": ["f"] } },
+        { "if": { "properties": { "type": { "const": "fns" } } }, "then": { "required": ["fs"] } },
+        { "if": { "properties": { "type": { "const": "param" } } }, "then": { "required": ["curves"] } },
+        { "if": { "properties": { "type": { "const": "implicit" } } }, "then": { "required": ["F"] } },
+        { "if": { "properties": { "type": { "const": "region" } } }, "then": { "required": ["F", "rel"], "properties": { "rel": { "enum": ["<", "<=", ">", ">="] } } } },
+        { "if": { "properties": { "type": { "const": "points" } } }, "then": { "required": ["points"] } }
+      ]
+    },
+    "poi": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "roots": { "type": "array", "items": { "type": "number" } },
+        "max": { "type": "array", "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } } },
+        "min": { "type": "array", "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } } },
+        "yInt": { "type": ["number", "null"] },
+        "cross": { "type": "array", "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } } },
+        "optional": { "type": "array", "items": { "type": "number" } },
+        "dense": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[
+{"id":"restr.posX","group":"restriction","school":1,"task":{"rows":["x^2 {x>0}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict((x) => x * x, (x) => x > 0)"}},
+{"id":"restr.interval","group":"restriction","school":1,"task":{"rows":["x^2 {-1<x<2}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict((x) => x * x, (x) => x > -1 && x < 2)"}},
+{"id":"restr.sinPeriod","group":"restriction","school":1,"task":{"rows":["sin(x) {0<=x<=pi}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict(Math.sin, (x) => x >= 0 && x <= PI)"}},
+{"id":"restr.sqrtCut","group":"restriction","school":2,"task":{"rows":["sqrt(x) {x<4}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict(Math.sqrt, (x) => x < 4)"}},
+{"id":"restr.recipPos","group":"restriction","school":2,"task":{"rows":["1/x {x>0}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict((x) => 1 / x, (x) => x > 0)"}},
+{"id":"restr.onY","group":"restriction","school":2,"task":{"rows":["x^2 {y<4}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict((x) => x * x, (_x, y) => y < 4)"}},
+{"id":"restr.twoBraces","group":"restriction","school":2,"task":{"rows":["x^2 {x>0}{x<2}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict((x) => x * x, (x) => x > 0 && x < 2)"}},
+{"id":"restr.floorPos","group":"restriction","school":3,"task":{"rows":["floor(x) {x>=0}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict(Math.floor, (x) => x >= 0)"}},
+{"id":"restr.yLabel","group":"restriction","school":1,"task":{"rows":["y=2x+1 {x<=3}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"restrict((x) => 2 * x + 1, (x) => x <= 3)"}},
+{"id":"restr.circleTop","group":"restriction","school":2,"task":{"rows":["x^2+y^2=4 {y>0}"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => y > 0 ? x * x + y * y - 4 : Number.NaN"}}
+]

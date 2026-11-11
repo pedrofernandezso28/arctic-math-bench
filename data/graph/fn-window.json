@@ -1,0 +1,3 @@
+[
+{"id":"fn.expFar.e100","group":"fn-window","school":3,"task":{"rows":["e^x"],"window":[100,101,2.6881171418161356e+43,7.307059979368068e+43],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.exp"}}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"fn.floor.D","group":"fn-jump","school":2,"task":{"rows":["floor(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.floor"}},
+{"id":"fn.floor.huge","group":"fn-jump","school":2,"task":{"rows":["floor(x)"],"window":[-1000,1000,-1282.0512820512822,1282.0512820512822],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.floor"}},
+{"id":"fn.floor.zoom","group":"fn-jump","school":2,"task":{"rows":["floor(x)"],"window":[2.9,3.1,1.9,3.1],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.floor"}},
+{"id":"fn.ceil.D","group":"fn-jump","school":3,"task":{"rows":["ceil(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.ceil"}},
+{"id":"fn.round.D","group":"fn-jump","school":3,"task":{"rows":["round(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.round(x)"}},
+{"id":"fn.sign.D","group":"fn-jump","school":2,"task":{"rows":["sign(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sign(x)"}},
+{"id":"fn.sign.tiny","group":"fn-jump","school":2,"task":{"rows":["sign(x)"],"window":[-0.000001,0.000001,-0.0000012820512820512822,0.0000012820512820512822],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sign(x)"}},
+{"id":"fn.xabs.D","group":"fn-jump","school":2,"task":{"rows":["x/abs(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x / Math.abs(x)"}},
+{"id":"fn.mod.D","group":"fn-jump","school":3,"task":{"rows":["mod(x,3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => mod(x, 3)"}},
+{"id":"fn.atanInv.D","group":"fn-jump","school":3,"task":{"rows":["atan(1/x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.atan(1 / x)"}},
+{"id":"fn.floorx2.zoom","group":"fn-jump","school":3,"task":{"rows":["floor(x^2)"],"window":[-3,3,-1,10],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.floor(x * x)"}}
+]

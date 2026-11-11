@@ -1,0 +1,7 @@
+[
+{"id":"fn.hole1.D","group":"fn-hole","school":1,"task":{"rows":["(x^2-1)/(x-1)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x * x - 1) / (x - 1)"}},
+{"id":"fn.hole1.tiny","group":"fn-hole","school":1,"task":{"rows":["(x^2-1)/(x-1)"],"window":[0.999999,1.000001,1.999998717948718,2.000001282051282],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x * x - 1) / (x - 1)"}},
+{"id":"fn.hole2.D","group":"fn-hole","school":2,"task":{"rows":["(x^3-8)/(x-2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x ** 3 - 8) / (x - 2)"}},
+{"id":"fn.sinc.D","group":"fn-hole","school":2,"task":{"rows":["sin(x)/x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(x) / x"}},
+{"id":"fn.sinc.tiny","group":"fn-hole","school":2,"task":{"rows":["sin(x)/x"],"window":[-0.001,0.001,0.9999995,1.0000005],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(x) / x"}}
+]

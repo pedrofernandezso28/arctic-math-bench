@@ -1,0 +1,9 @@
+[
+{"id":"cub.1","group":"cubics","school":1,"task":{"rows":["x^3-6x^2+9x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x ** 3 - 6 * x * x + 9 * x"}},
+{"id":"cub.2","group":"cubics","school":1,"task":{"rows":["(x+1)(x-2)(x+3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x + 1) * (x - 2) * (x + 3)"}},
+{"id":"cub.3","group":"cubics","school":1,"task":{"rows":["-x^3+3x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -(x ** 3) + 3 * x"}},
+{"id":"cub.4","group":"cubics","school":2,"task":{"rows":["x^3/3-x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x ** 3 / 3 - x"}},
+{"id":"cub.5","group":"cubics","school":2,"task":{"rows":["(x-1)^3+2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x - 1) ** 3 + 2"}},
+{"id":"quart.1","group":"cubics","school":2,"task":{"rows":["x^4-4x^3+4x^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x ** 4 - 4 * x ** 3 + 4 * x * x"}},
+{"id":"quart.2","group":"cubics","school":2,"task":{"rows":["0.1x^5-x^3"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 0.1 * x ** 5 - x ** 3"}}
+]

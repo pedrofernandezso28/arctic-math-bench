@@ -1,0 +1,13 @@
+[
+{"id":"par.vertex1","group":"parabolas","school":1,"task":{"rows":["y=2(x+1)^2-4"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 2 * (x + 1) ** 2 - 4"}},
+{"id":"par.vertex2","group":"parabolas","school":1,"task":{"rows":["y=-0.5(x-2)^2+3"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -0.5 * (x - 2) ** 2 + 3"}},
+{"id":"par.factored1","group":"parabolas","school":1,"task":{"rows":["y=(x+2)(x-4)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x + 2) * (x - 4)"}},
+{"id":"par.factored2","group":"parabolas","school":1,"task":{"rows":["y=-(x-1)(x+3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -(x - 1) * (x + 3)"}},
+{"id":"par.wide","group":"parabolas","school":1,"task":{"rows":["y=0.1x^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 0.1 * x * x"}},
+{"id":"par.general","group":"parabolas","school":1,"task":{"rows":["y=3x^2-12x+9"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 3 * x * x - 12 * x + 9"}},
+{"id":"par.-2x2+8","group":"parabolas","school":1,"task":{"rows":["y=-2x^2+8"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -2 * x * x + 8"}},
+{"id":"par.sideways1","group":"parabolas","school":1,"task":{"rows":["x=y^2-4"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - (y * y - 4)"}},
+{"id":"par.sideways2","group":"parabolas","school":2,"task":{"rows":["x=(y-1)^2+2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x - ((y - 1) ** 2 + 2)"}},
+{"id":"par.y2=4x","group":"parabolas","school":1,"task":{"rows":["y^2=4x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => y * y - 4 * x"}},
+{"id":"par.x2=8y","group":"parabolas","school":1,"task":{"rows":["x^2=8y"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"implicit","F":"(x, y) => x * x - 8 * y"}}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"fn.sin50.D","group":"fn-highfreq","school":2,"task":{"rows":["sin(50x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(50 * x)"}},
+{"id":"fn.sin50.zoom","group":"fn-highfreq","school":2,"task":{"rows":["sin(50x)"],"window":[-1,1,-1.5,1.5],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(50 * x)"}},
+{"id":"fn.sin50.wide","group":"fn-highfreq","school":2,"task":{"rows":["sin(50x)"],"window":[-100,100,-2,2],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(50 * x)"}},
+{"id":"fn.sin1x.D","group":"fn-highfreq","school":2,"task":{"rows":["sin(1/x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(1 / x)","ignore":[[-0.1,0.1]]}},
+{"id":"fn.sin1x.zoom","group":"fn-highfreq","school":2,"task":{"rows":["sin(1/x)"],"window":[-1,1,-1.5,1.5],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(1 / x)","ignore":[[-0.04,0.04]]}},
+{"id":"fn.sin1x.deep","group":"fn-highfreq","school":2,"task":{"rows":["sin(1/x)"],"window":[0.01,0.02,-1.5,1.5],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(1 / x)"}},
+{"id":"fn.sinx2.D","group":"fn-highfreq","school":2,"task":{"rows":["sin(x^2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(x * x)"}},
+{"id":"fn.sinx2.wide","group":"fn-highfreq","school":2,"task":{"rows":["sin(x^2)"],"window":[-30,30,-2,2],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(x * x)"}},
+{"id":"fn.sinx2.far","group":"fn-highfreq","school":2,"task":{"rows":["sin(x^2)"],"window":[100,101,-1.5,1.5],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(x * x)"}},
+{"id":"fn.xsin1x.zoom","group":"fn-highfreq","school":3,"task":{"rows":["x*sin(1/x)"],"window":[-0.5,0.5,-0.6,0.6],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x * Math.sin(1 / x)","ignore":[[-0.03,0.03]]}},
+{"id":"fn.sin1000.D","group":"fn-highfreq","school":3,"task":{"rows":["sin(1000x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.sin(1e3 * x)"}}
+]

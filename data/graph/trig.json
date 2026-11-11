@@ -1,0 +1,16 @@
+[
+{"id":"trig.amp","group":"trig","school":1,"task":{"rows":["3sin(2x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 3 * sin(2 * x)"}},
+{"id":"trig.period","group":"trig","school":1,"task":{"rows":["-2cos(x/2)+1"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => -2 * cos(x / 2) + 1"}},
+{"id":"trig.phase","group":"trig","school":1,"task":{"rows":["sin(x-pi/3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => sin(x - PI / 3)"}},
+{"id":"trig.all","group":"trig","school":1,"task":{"rows":["2sin(3x+pi)-1"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 2 * sin(3 * x + PI) - 1"}},
+{"id":"trig.cospix","group":"trig","school":1,"task":{"rows":["cos(pi*x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => cos(PI * x)"}},
+{"id":"trig.tanHalf","group":"trig","school":2,"task":{"rows":["tan(x/2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => tan(x / 2)"}},
+{"id":"trig.tan2","group":"trig","school":2,"task":{"rows":["tan(2x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => tan(2 * x)"}},
+{"id":"trig.sum","group":"trig","school":1,"task":{"rows":["sin(x)+cos(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => sin(x) + cos(x)"}},
+{"id":"trig.sin2","group":"trig","school":2,"task":{"rows":["sin(x)^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => sin(x) ** 2"}},
+{"id":"trig.double","group":"trig","school":2,"task":{"rows":["2sin(x)cos(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 2 * sin(x) * cos(x)"}},
+{"id":"trig.harm","group":"trig","school":2,"task":{"rows":["sin(x)+sin(2x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => sin(x) + sin(2 * x)"}},
+{"id":"trig.sec2","group":"trig","school":3,"task":{"rows":["sec(x)^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / cos(x) ** 2"}},
+{"id":"trig.atanHalf","group":"trig","school":2,"task":{"rows":["atan(x/2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.atan(x / 2)"}},
+{"id":"trig.asin","group":"trig","school":2,"task":{"rows":["asin(x/3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.asin(x / 3)"}}
+]

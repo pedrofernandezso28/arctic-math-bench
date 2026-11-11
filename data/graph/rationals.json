@@ -1,0 +1,14 @@
+[
+{"id":"rat.slant1","group":"rationals","school":1,"task":{"rows":["(x^2+1)/x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x * x + 1) / x"}},
+{"id":"rat.slant2","group":"rationals","school":1,"task":{"rows":["(x^2-x-2)/(x-3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x * x - x - 2) / (x - 3)"}},
+{"id":"rat.slant3","group":"rationals","school":2,"task":{"rows":["(x^3+1)/x^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x ** 3 + 1) / (x * x)"}},
+{"id":"rat.xPlus1/x","group":"rationals","school":1,"task":{"rows":["x+1/x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x + 1 / x"}},
+{"id":"rat.hole","group":"rationals","school":1,"task":{"rows":["(x^2-4)/(x-2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x * x - 4) / (x - 2)"}},
+{"id":"rat.twoPoles","group":"rationals","school":1,"task":{"rows":["(2x^2+1)/(x^2-1)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (2 * x * x + 1) / (x * x - 1)"}},
+{"id":"rat.double","group":"rationals","school":2,"task":{"rows":["1/(x-2)^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1 / (x - 2) ** 2"}},
+{"id":"rat.xOver","group":"rationals","school":2,"task":{"rows":["x/(x^2-4)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x / (x * x - 4)"}},
+{"id":"rat.quadDen","group":"rationals","school":2,"task":{"rows":["(x+1)/(x^2+x-6)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x + 1) / (x * x + x - 6)"}},
+{"id":"rat.shifted","group":"rationals","school":1,"task":{"rows":["3/(x+2)-1"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 3 / (x + 2) - 1"}},
+{"id":"rat.bounded","group":"rationals","school":2,"task":{"rows":["x^2/(x^2+1)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x * x / (x * x + 1)"}},
+{"id":"rat.horiz","group":"rationals","school":2,"task":{"rows":["(x^2-9)/(x^2-4)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => (x * x - 9) / (x * x - 4)"}}
+]

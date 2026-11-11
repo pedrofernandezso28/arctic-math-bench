@@ -1,0 +1,11 @@
+[
+{"id":"slider.default","group":"sliders","school":1,"task":{"rows":["a*sin(b*x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"expectParams":["a","b"],"truth":{"type":"fn","f":"Math.sin"}},
+{"id":"slider.set","group":"sliders","school":1,"task":{"rows":["a*sin(b*x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500},"params":{"a":2,"b":3}},"truth":{"type":"fn","f":"(x) => 2 * Math.sin(3 * x)"}},
+{"id":"slider.line","group":"sliders","school":1,"task":{"rows":["y=mx+b"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500},"params":{"m":2,"b":-1}},"expectParams":["m","b"],"truth":{"type":"fn","f":"(x) => 2 * x - 1"}},
+{"id":"slider.vertex","group":"sliders","school":1,"task":{"rows":["a(x-h)^2+k"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500},"params":{"a":0.5,"h":2,"k":-3}},"expectParams":["a","h","k"],"truth":{"type":"fn","f":"(x) => 0.5 * (x - 2) ** 2 - 3"}},
+{"id":"slider.ax2","group":"sliders","school":1,"task":{"rows":["y=ax^2"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500},"params":{"a":-1}},"truth":{"type":"fn","f":"(x) => -x * x"}},
+{"id":"slider.phase","group":"sliders","school":2,"task":{"rows":["sin(x+c)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500},"params":{"c":1}},"truth":{"type":"fn","f":"(x) => Math.sin(x + 1)"}},
+{"id":"slider.capital","group":"sliders","school":2,"task":{"rows":["y=A sin(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.sin"}},
+{"id":"slider.base","group":"sliders","school":2,"task":{"rows":["y=k^x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500},"params":{"k":2}},"truth":{"type":"fn","f":"(x) => 2 ** x"}},
+{"id":"slider.n","group":"sliders","school":2,"task":{"rows":["y=x^n"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x"}}
+]

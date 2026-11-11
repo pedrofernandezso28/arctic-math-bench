@@ -1,0 +1,10 @@
+[
+{"id":"fn.expexp.D","group":"fn-steepflat","school":3,"task":{"rows":["exp(exp(x))"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.exp(Math.exp(x))"}},
+{"id":"fn.steep.D","group":"fn-steepflat","school":2,"task":{"rows":["1000x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1e3 * x"}},
+{"id":"fn.flat.D","group":"fn-steepflat","school":2,"task":{"rows":["0.001x"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1e-3 * x"}},
+{"id":"fn.flat.zoomY","group":"fn-steepflat","school":2,"task":{"rows":["0.001x"],"window":[-10,10,-0.02,0.02],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 1e-3 * x"}},
+{"id":"fn.x10.D","group":"fn-steepflat","school":3,"task":{"rows":["x^10"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x ** 10"}},
+{"id":"fn.x10.zoom","group":"fn-steepflat","school":3,"task":{"rows":["x^10"],"window":[-1.2,1.2,-0.2,6],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => x ** 10"}},
+{"id":"fn.e10x.D","group":"fn-steepflat","school":3,"task":{"rows":["e^(10x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.exp(10 * x)"}},
+{"id":"fn.cliff.zoom","group":"fn-steepflat","school":3,"task":{"rows":["atan(1000x)"],"window":[-1,1,-2,2],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => Math.atan(1e3 * x)"}}
+]

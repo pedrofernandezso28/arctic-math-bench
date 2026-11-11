@@ -1,0 +1,8 @@
+[
+{"id":"pts.one","group":"points","school":1,"task":{"rows":["(1,2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"points","points":[[1,2]]}},
+{"id":"pts.two","group":"points","school":1,"task":{"rows":["(1,2),(3,4)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"points","points":[[1,2],[3,4]]}},
+{"id":"pts.list","group":"points","school":1,"task":{"rows":["[(1,2),(3,4),(5,-1)]"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"points","points":[[1,2],[3,4],[5,-1]]}},
+{"id":"pts.slider","group":"points","school":2,"task":{"rows":["(a, a^2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500},"params":{"a":2}},"truth":{"type":"points","points":[[2,4]]}},
+{"id":"pts.consts","group":"points","school":2,"task":{"rows":["(pi, sqrt(2))"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"points","points":[[3.141592653589793,1.4142135623730951]]}},
+{"id":"pts.negative","group":"points","school":1,"task":{"rows":["(-1, 2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"points","points":[[-1,2]]}}
+]

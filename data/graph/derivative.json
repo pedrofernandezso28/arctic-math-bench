@@ -1,0 +1,10 @@
+[
+{"id":"deriv.prime","group":"derivative","school":1,"task":{"rows":["f(x)=x^3-2x","f'(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"judgeRow":1,"truth":{"type":"fn","f":"(x) => 3 * x * x - 2"}},
+{"id":"deriv.ddx","group":"derivative","school":1,"task":{"rows":["d/dx sin(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"Math.cos"}},
+{"id":"deriv.ddxParen","group":"derivative","school":1,"task":{"rows":["d/dx(x^3)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 3 * x * x"}},
+{"id":"deriv.second","group":"derivative","school":2,"task":{"rows":["f(x)=e^x","f''(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"judgeRow":1,"truth":{"type":"fn","f":"Math.exp"}},
+{"id":"deriv.abs","group":"derivative","school":2,"task":{"rows":["f(x)=abs(x)","f'(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"judgeRow":1,"truth":{"type":"fn","f":"(x) => Math.sign(x) || Number.NaN"}},
+{"id":"deriv.ln","group":"derivative","school":2,"task":{"rows":["f(x)=ln(x)","f'(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"judgeRow":1,"truth":{"type":"fn","f":"(x) => x > 0 ? 1 / x : Number.NaN"}},
+{"id":"deriv.yddx","group":"derivative","school":2,"task":{"rows":["y=d/dx(x^2)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"truth":{"type":"fn","f":"(x) => 2 * x"}},
+{"id":"deriv.tan","group":"derivative","school":2,"task":{"rows":["f(x)=tan(x)","f'(x)"],"window":[-10,10,-12.820512820512821,12.820512820512821],"canvas":{"width":390,"height":500}},"judgeRow":1,"truth":{"type":"fn","f":"(x) => 1 / Math.cos(x) ** 2"}}
+]
