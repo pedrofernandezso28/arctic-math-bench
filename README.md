@@ -7,7 +7,7 @@ An engine-agnostic benchmark for math solvers and graphing engines. It contains 
 - Judges that **never trust the engine under test**: they substitute, sample, differentiate numerically and compare pixels against references they compute themselves.
 - Results per item (`CORRECT`, `WRONG`, `INCOMPLETE`, `REFUSED`, plus `MISSING` and `ROUGH` for graphs), a summary table per category, JSON and Markdown reports.
 
-The problems were extracted from the test batteries of a calculator application and rewritten so that nothing about that application, or any other engine, is needed to run them.
+The problems come from the test batteries of Arctic Calculator, an offline calculator app by Arctic Falcon Labs, rewritten so that nothing about that app, or any other engine, is needed to run them.
 
 ## The numbers
 
@@ -308,7 +308,7 @@ Measured with the commands in the quick start, on this repository at version 0.1
 
 ## En español
 
-Arctic Math Bench es un banco de pruebas independiente del motor para solucionadores matemáticos y motores de gráficas. Incluye 1.119 problemas de resolución (ecuaciones, inecuaciones, sistemas, derivadas, integrales, límites, EDO, matrices, complejos, series, álgebra) y 722 casos de gráficas (funciones, curvas implícitas, inecuaciones, polares, paramétricas, restricciones, deslizadores, puntos de interés), cada uno con su verdad calculada a mano. Los jueces no confían en el motor evaluado: sustituyen las raíces en la ecuación original, muestrean, derivan numéricamente y comparan píxeles contra referencias propias.
+Arctic Math Bench es un banco de pruebas independiente del motor para solucionadores matemáticos y motores de gráficas. Incluye 1.119 problemas de resolución (ecuaciones, inecuaciones, sistemas, derivadas, integrales, límites, EDO, matrices, complejos, series, álgebra) y 722 casos de gráficas (funciones, curvas implícitas, inecuaciones, polares, paramétricas, restricciones, deslizadores, puntos de interés), cada uno con su verdad calculada a mano. Los jueces no confían en el motor evaluado: sustituyen las raíces en la ecuación original, muestrean, derivan numéricamente y comparan píxeles contra referencias propias. Los problemas salen de las baterías de pruebas de Arctic Calculator, una calculadora sin conexión de Arctic Falcon Labs.
 
 Uso rápido: `npm ci`, `npm test`, y luego `node dist/cli.js solve --adapter ./mi-adaptador.mjs` o `... graph --adapter ...`. Un adaptador es un módulo con un método `solve(task)` o `plot(task)` que devuelve la estructura neutra descrita arriba (gramática de respuestas). Las clases por problema son CORRECT, WRONG, INCOMPLETE y REFUSED, y en gráficas además MISSING y ROUGH, con umbrales en píxeles documentados. Los dos adaptadores de ejemplo (mathjs y un muestreador uniforme) son líneas base ingenuas, no una clasificación. Las limitaciones honestas están en la sección anterior. Licencias: código Apache-2.0, datos CC BY 4.0.
 
